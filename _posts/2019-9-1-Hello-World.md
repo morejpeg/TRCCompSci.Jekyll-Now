@@ -1,15 +1,26 @@
 ---
 layout: post
-title: Hello World!
-categories: C# Programming
+title: If statements 
+categories: c# programming 
 ---
-To display something in the C# console the command is:
+If statements can be used in order to make your computer run certain things depending on certain situations and run something else if the input does not meet those specifications
+---
+            Console.WriteLine("Enter number A");
+            int number1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter number B");
+            int number2 = Convert.ToInt32(Console.ReadLine());
+            if (number1 < number2)
+            {
+                Console.WriteLine(number2 + " is larger");
+            }
+            else if (number1 == number2)
+            {
+                Console.WriteLine("They are equal");
 
-```csharp
-Console.WriteLine("Hello World");
-```
-
-This needs to be within the: 
-```csharp
-static void Main(){      }
-```
+            }
+            else
+            {
+                Console.WriteLine(number1 + " is larger");
+            }
+            Console.ReadLine();
+-----------------------------------------------------
